@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Pasion — Software Developer & Systems Engineer</title>
+  <meta name="description" content="Christopher Pasion is a software developer and systems engineer from Quezon City, Philippines. Creator of Pasionet (ISP billing portal), Roocops (tactical gaming tools), ENGG (software studio), and automation systems.">
+  <meta name="author" content="Christopher Pasion">
+  <link rel="canonical" href="https://christopherpasion.com">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://christopherpasion.com">
+  <meta property="og:title" content="Christopher Pasion — Software Developer & Systems Engineer">
+  <meta property="og:description" content="Full-stack developer and systems engineer from Quezon City, Philippines. Building real-world ISP billing portals, tactical gaming utilities with in-browser OCR, and cloud automations.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Christopher Pasion">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://christopherpasion.com">
+  <meta name="twitter:title" content="Christopher Pasion — Software Developer & Systems Engineer">
+  <meta name="twitter:description" content="Full-stack developer from Quezon City, Philippines. Creator of Pasionet, Roocops, ENGG, and Discord automation pipelines.">
+
+  <!-- Favicon: Inline Vector SVG (Light Theme Aware) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23ffffff' stroke='%23d0d7de' stroke-width='2'/%3E%3Ctext x='16' y='21' font-family='monospace' font-weight='700' font-size='14' fill='%230969da' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E">
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD (GEO / AEO Entity Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://christopherpasion.com/#person",
+        "name": "Christopher Pasion",
+        "jobTitle": "Software Developer & Systems Engineer",
+        "url": "https://christopherpasion.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Quezon City",
+          "addressCountry": "Philippines"
+        },
+        "sameAs": [
+          "https://engg.online",
+          "https://pasionet.com",
+          "https://roocops.com"
+        ],
+        "knowsAbout": [
+          "Full-Stack Web Development",
+          "Telecommunications Billing Systems",
+          "Computer Vision and OCR",
+          "Real-Time WebSockets",
+          "Discord API Automations",
+          "Google Sheets API Integration",
+          "Node.js",
+          "React"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://christopherpasion.com/#website",
+        "url": "https://christopherpasion.com",
+        "name": "Christopher Pasion",
+        "publisher": {
+          "@id": "https://christopherpasion.com/#person"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://pasionet.com/#organization",
+        "name": "PASIONET Inc.",
+        "url": "https://pasionet.com",
+        "founder": {
+          "@id": "https://christopherpasion.com/#person"
+        },
+        "description": "Telecommunications and fiber internet provider serving subscribers in Hinatuan, Surigao del Sur.",
+        "areaServed": "Hinatuan, Surigao del Sur, Philippines"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://roocops.com/#software",
+        "name": "Roocops",
+        "url": "https://roocops.com",
+        "creator": {
+          "@id": "https://christopherpasion.com/#person"
+        },
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser",
+        "description": "MMO guild auction manager and tactical war room with in-browser OCR screen capture attendance for Ragnarok Origin: Classic."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://engg.online/#software",
+        "name": "ENGG",
+        "url": "https://engg.online",
+        "creator": {
+          "@id": "https://christopherpasion.com/#person"
+        },
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web Browser",
+        "description": "Independent software studio, real-time gaming hub, and interactive tooling lab."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="container header-container">
+      <a href="#hero" id="nav-logo" class="nav-logo" aria-label="Christopher Pasion Home">
+        <span class="logo-bracket">[</span><span class="logo-text">christopher pasion</span><span class="logo-bracket">]</span>
+      </a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary Navigation">
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+          <li><a href="#systems" id="nav-link-systems">Systems</a></li>
+          <li><a href="#stack" id="nav-link-stack">Stack</a></li>
+          <li><a href="#quick-facts" id="nav-link-facts">Facts</a></li>
+          <li><a href="#contact" id="nav-link-contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-status">
+        <span id="status-indicator" class="status-indicator" title="Available for projects & consulting">
+          <span class="status-dot"></span>
+          <span class="status-text">Available</span>
+        </span>
+        <button id="nav-mobile-toggle" class="nav-mobile-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section (AEO / SEO Anchor) -->
+    <section id="hero" class="section hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="badge-prefix">location:</span> Quezon City, Philippines
+        </div>
+        
+        <h1 id="hero-title" class="hero-title">
+          Christopher Pasion
+        </h1>
+        
+        <p class="hero-role">
+          Software Developer &amp; Systems Engineer
+        </p>
+
+        <!-- Direct Answer / Entity Definition Block (AEO / Perplexity friendly) -->
+        <p id="hero-bio" class="hero-bio">
+          I build web applications, game utilities, and automation pipelines. I operate a local ISP billing platform in Surigao del Sur (<a href="https://pasionet.com" target="_blank" rel="noopener noreferrer" class="text-link">Pasionet</a>), tactical gaming tools with in-browser computer vision (<a href="https://roocops.com" target="_blank" rel="noopener noreferrer" class="text-link">Roocops</a>), and an independent software studio (<a href="https://engg.online" target="_blank" rel="noopener noreferrer" class="text-link">ENGG</a>).
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" id="btn-hero-projects" class="btn btn-primary">
+            Explore Work
+          </a>
+          <a href="#contact" id="btn-hero-contact" class="btn btn-secondary">
+            Get in Touch
+          </a>
+          <button id="btn-copy-email" class="btn btn-outline" type="button" data-email="mail@christopherpasion.com" aria-label="Copy email address to clipboard">
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="btn-copy-text">Copy Email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Production Work</span>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-desc">Active web platforms, telecommunications infrastructure, and browser utilities.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 1. Pasionet -->
+          <article id="card-pasionet" class="project-card" aria-labelledby="title-pasionet">
+            <div class="card-top">
+              <div class="card-status-row">
+                <span class="card-status live">
+                  <span class="status-dot"></span> Live Production
+                </span>
+                <span class="card-domain">pasionet.com</span>
+              </div>
+              <h3 id="title-pasionet" class="card-title">
+                <a href="https://pasionet.com" target="_blank" rel="noopener noreferrer" class="card-title-link">
+                  Pasionet
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </h3>
+              <p class="card-subtitle">ISP Billing &amp; Subscriber Portal</p>
+            </div>
+            
+            <p class="card-body">
+              Customer service and account portal for Pasionet Fiber Internet subscribers in Hinatuan, Surigao del Sur. Enables customers to check invoices and upload payment receipts without requiring staff credentials. Includes a role-based administrative dashboard for ISP team operations.
+            </p>
+
+            <ul class="card-features" aria-label="Pasionet Key Features">
+              <li><strong>Zero-Login Bill Check:</strong> Account number + last 4 mobile digits verification.</li>
+              <li><strong>Receipt Upload:</strong> Direct payment slip processing and support routing.</li>
+              <li><strong>Staff Operations:</strong> Internal dashboard for subscriber management.</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="tag-group" aria-label="Technologies used">
+                <span class="tag">ISP Infrastructure</span>
+                <span class="tag">Billing Portal</span>
+                <span class="tag">Auth Dashboard</span>
+              </div>
+              <a href="https://pasionet.com" id="link-pasionet-visit" target="_blank" rel="noopener noreferrer" class="card-action-link" aria-label="Visit Pasionet live website">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Roocops -->
+          <article id="card-roocops" class="project-card" aria-labelledby="title-roocops">
+            <div class="card-top">
+              <div class="card-status-row">
+                <span class="card-status live">
+                  <span class="status-dot"></span> Live Tool
+                </span>
+                <span class="card-domain">roocops.com</span>
+              </div>
+              <h3 id="title-roocops" class="card-title">
+                <a href="https://roocops.com" target="_blank" rel="noopener noreferrer" class="card-title-link">
+                  Roocops
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </h3>
+              <p class="card-subtitle">Ragnarok Origin Classic Tactical Suite</p>
+            </div>
+            
+            <p class="card-body">
+              Guild war room and auction manager for Ragnarok Origin: Classic. Features a browser-based real-time OCR scanner that captures game client or emulator screens with zero software install, automatically scanning rosters and tracking attendance.
+            </p>
+
+            <ul class="card-features" aria-label="Roocops Key Features">
+              <li><strong>Cyber-HUD OCR Scanner:</strong> Live in-browser screen stream reading game text.</li>
+              <li><strong>Auction Board Generator:</strong> 4-slot Feather &amp; Card priority allocation.</li>
+              <li><strong>4K Discord Export:</strong> High-resolution infographic rendering for guild channels.</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="tag-group" aria-label="Technologies used">
+                <span class="tag">Browser OCR</span>
+                <span class="tag">Screen Capture</span>
+                <span class="tag">Canvas 4K</span>
+                <span class="tag">Discord Integration</span>
+              </div>
+              <a href="https://roocops.com" id="link-roocops-visit" target="_blank" rel="noopener noreferrer" class="card-action-link" aria-label="Visit Roocops live website">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. ENGG -->
+          <article id="card-engg" class="project-card" aria-labelledby="title-engg">
+            <div class="card-top">
+              <div class="card-status-row">
+                <span class="card-status live">
+                  <span class="status-dot"></span> Live Studio
+                </span>
+                <span class="card-domain">engg.online</span>
+              </div>
+              <h3 id="title-engg" class="card-title">
+                <a href="https://engg.online" target="_blank" rel="noopener noreferrer" class="card-title-link">
+                  ENGG
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </h3>
+              <p class="card-subtitle">Digital Software Studio &amp; Gaming Hub</p>
+            </div>
+            
+            <p class="card-body">
+              Independent development studio and interactive gaming hub. Houses custom web applications, real-time multiplayer systems with WebSockets running against a Fly.io API, project estimators, and user progression mechanics.
+            </p>
+
+            <ul class="card-features" aria-label="ENGG Key Features">
+              <li><strong>Real-Time API:</strong> WebSocket event engine deployed on Fly.io (<code class="code-inline">engg.fly.dev</code>).</li>
+              <li><strong>Interactive Tools:</strong> Step-by-step project builder and pricing estimator.</li>
+              <li><strong>Gaming Hub:</strong> Multiplayer lobbies and community account synchronization.</li>
+            </ul>
+
+            <div class="card-footer">
+              <div class="tag-group" aria-label="Technologies used">
+                <span class="tag">React</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">Fly.io</span>
+                <span class="tag">Interactive UI</span>
+              </div>
+              <a href="https://engg.online" id="link-engg-visit" target="_blank" rel="noopener noreferrer" class="card-action-link" aria-label="Visit ENGG live website">
+                Visit Site &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems & Automations Section -->
+    <section id="systems" class="section systems-section" aria-labelledby="systems-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Backend &amp; Workflows</span>
+          <h2 id="systems-heading" class="section-title">Automations &amp; Integrations</h2>
+          <p class="section-desc">Connecting chat platforms, webhooks, and spreadsheet databases for automated operations.</p>
+        </div>
+
+        <div id="card-automation" class="system-card">
+          <div class="system-header">
+            <div>
+              <h3 class="system-title">Discord Bot &amp; Google Sheets Data Pipeline</h3>
+              <p class="system-subtitle">Event-driven synchronization for community tracking and automated record management.</p>
+            </div>
+            <span class="card-status live">
+              <span class="status-dot"></span> Active Pipeline
+            </span>
+          </div>
+
+          <!-- Architecture Visual Flow -->
+          <div class="pipeline-flow" aria-label="Architecture Data Flow Diagram">
+            <div class="flow-step">
+              <div class="step-badge">Source</div>
+              <div class="step-box">
+                <span class="step-title">Discord Interaction</span>
+                <span class="step-desc">Slash commands, attendance triggers &amp; webhooks</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+            <div class="flow-step">
+              <div class="step-badge">Service</div>
+              <div class="step-box">
+                <span class="step-title">Node.js Middleware</span>
+                <span class="step-desc">Event parsing, rate-limiting &amp; data validation</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+
+            <div class="flow-step">
+              <div class="step-badge">Storage</div>
+              <div class="step-box">
+                <span class="step-title">Google Sheets API</span>
+                <span class="step-desc">Automated row updates, formulas &amp; operational logs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="system-details-grid">
+            <div class="system-detail-col">
+              <h4 class="detail-heading">What It Solves</h4>
+              <p class="detail-text">
+                Eliminates manual data entry across large community rosters and customer records. Commands executed in Discord instantly validate against business rules and populate structured spreadsheets in real time.
+              </p>
+            </div>
+            <div class="system-detail-col">
+              <h4 class="detail-heading">Technical Implementation</h4>
+              <p class="detail-text">
+                Uses the Discord API gateway, webhook receivers, and Google Sheets v4 REST API with service account credentials, error retry handling, and rate limit throttling.
+              </p>
+            </div>
+          </div>
+
+          <div class="tag-group" aria-label="Technologies used">
+            <span class="tag">Discord API</span>
+            <span class="tag">Google Sheets API</span>
+            <span class="tag">Webhooks</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stack Section -->
+    <section id="stack" class="section stack-section" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Toolkit</span>
+          <h2 id="stack-heading" class="section-title">Technical Stack</h2>
+          <p class="section-desc">Technologies and tools used across my production projects.</p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-category">
+            <h3 class="category-title">Frontend &amp; Browser</h3>
+            <ul class="stack-list">
+              <li><span class="bullet">&bull;</span> HTML5 &amp; Modern Semantic CSS</li>
+              <li><span class="bullet">&bull;</span> JavaScript (ESNext) &amp; TypeScript</li>
+              <li><span class="bullet">&bull;</span> React &amp; Modern Component State</li>
+              <li><span class="bullet">&bull;</span> Canvas API &amp; Client-Side Image Rendering</li>
+              <li><span class="bullet">&bull;</span> Browser MediaDevices (Screen Capture)</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="category-title">Backend &amp; Real-Time</h3>
+            <ul class="stack-list">
+              <li><span class="bullet">&bull;</span> Node.js &amp; Express REST APIs</li>
+              <li><span class="bullet">&bull;</span> WebSockets &amp; Socket.IO Events</li>
+              <li><span class="bullet">&bull;</span> Role-Based Authentication &amp; Sessions</li>
+              <li><span class="bullet">&bull;</span> Webhook Processing &amp; Event Queues</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="category-title">APIs &amp; Computer Vision</h3>
+            <ul class="stack-list">
+              <li><span class="bullet">&bull;</span> Google Sheets API v4 Integration</li>
+              <li><span class="bullet">&bull;</span> Discord Gateway &amp; Slash Command API</li>
+              <li><span class="bullet">&bull;</span> In-Browser OCR / Text Recognition</li>
+              <li><span class="bullet">&bull;</span> Facebook Messenger Webhooks</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="category-title">Deployment &amp; Infrastructure</h3>
+            <ul class="stack-list">
+              <li><span class="bullet">&bull;</span> Fly.io (Containerized Node/API Hosting)</li>
+              <li><span class="bullet">&bull;</span> Cloudflare (DNS, Edge Security &amp; CDN)</li>
+              <li><span class="bullet">&bull;</span> Linux / VPS Environment Configuration</li>
+              <li><span class="bullet">&bull;</span> Git &amp; GitHub Version Control</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Facts / AEO Section -->
+    <section id="quick-facts" class="section facts-section" aria-labelledby="facts-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Entity Overview</span>
+          <h2 id="facts-heading" class="section-title">Quick Facts</h2>
+          <p class="section-desc">Key details and verification data for search and answer engines.</p>
+        </div>
+
+        <div class="facts-card">
+          <dl class="facts-list">
+            <div class="fact-item">
+              <dt class="fact-term">Full Name</dt>
+              <dd class="fact-value">Christopher Pasion</dd>
+            </div>
+            <div class="fact-item">
+              <dt class="fact-term">Primary Role</dt>
+              <dd class="fact-value">Software Developer &amp; Systems Engineer</dd>
+            </div>
+            <div class="fact-item">
+              <dt class="fact-term">Location</dt>
+              <dd class="fact-value">Quezon City, Philippines</dd>
+            </div>
+            <div class="fact-item">
+              <dt class="fact-term">Active Platforms</dt>
+              <dd class="fact-value">
+                <a href="https://pasionet.com" target="_blank" rel="noopener noreferrer" class="fact-link">Pasionet.com</a>, 
+                <a href="https://roocops.com" target="_blank" rel="noopener noreferrer" class="fact-link">Roocops.com</a>, 
+                <a href="https://engg.online" target="_blank" rel="noopener noreferrer" class="fact-link">ENGG.online</a>
+              </dd>
+            </div>
+            <div class="fact-item">
+              <dt class="fact-term">Specialties</dt>
+              <dd class="fact-value">Full-Stack Web, ISP Portals, In-Browser OCR, Discord/Sheets Automations</dd>
+            </div>
+            <div class="fact-item">
+              <dt class="fact-term">Status</dt>
+              <dd class="fact-value">Available for select technical projects and consulting</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Accessible Form & Form Labels -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Connect</span>
+          <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+          <p class="section-desc">Send a direct message or connect through professional channels.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Direct Channels -->
+          <div class="contact-info">
+            <h3 class="contact-subheading">Direct Communication</h3>
+            <p class="contact-text">
+              Whether you have an inquiry about my platforms, require custom web development, or want to discuss systems automation, reach out directly.
+            </p>
+
+            <div class="channel-list">
+              <div class="channel-item">
+                <span class="channel-label">Email</span>
+                <a href="mailto:mail@christopherpasion.com" id="link-direct-email" class="channel-value">mail@christopherpasion.com</a>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">Location</span>
+                <span class="channel-value">Quezon City, Philippines</span>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">Verified Links</span>
+                <div class="social-links-row">
+                  <a href="https://engg.online" id="link-studio" target="_blank" rel="noopener noreferrer" class="social-pill">
+                    ENGG Studio
+                  </a>
+                  <a href="https://discord.gg/everynation" id="link-discord" target="_blank" rel="noopener noreferrer" class="social-pill">
+                    Discord Community
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Strict Label-ID Associations and Honeypot -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form" action="mailto:mail@christopherpasion.com" method="post" enctype="text/plain">
+              
+              <!-- Anti-Spam Honeypot (Hidden from human visitors, traps bots) -->
+              <div class="form-honeypot" style="display: none;" aria-hidden="true">
+                <label for="contact-bot-field">Do not fill this field if you are human</label>
+                <input type="text" id="contact-bot-field" name="bot_honey" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    Full Name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-control" 
+                    placeholder="Your name" 
+                    autocomplete="name" 
+                    required 
+                    aria-required="true"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    Email Address <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-control" 
+                    placeholder="name@domain.com" 
+                    autocomplete="email" 
+                    required 
+                    aria-required="true"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">
+                  Subject <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-control" 
+                  placeholder="Project inquiry / consultation" 
+                  required 
+                  aria-required="true"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-control textarea" 
+                  rows="5" 
+                  placeholder="Details about your project or inquiry..." 
+                  required 
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-submit">
+                  Send Message
+                </button>
+                <span id="form-status-msg" class="form-status-msg" role="status" aria-live="polite"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">christopher pasion</span>
+        <span class="footer-sep">&bull;</span>
+        <span class="footer-copy">&copy; <span id="footer-year">2026</span> Christopher Pasion. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" id="link-back-top" class="footer-link">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
